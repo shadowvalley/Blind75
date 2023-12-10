@@ -6,3 +6,4 @@ Questions Solved
 3. Contains Duplicate -> https://leetcode.com/problems/contains-duplicate/description/ 
 4. Product of Array Except Self -> https://leetcode.com/problems/product-of-array-except-self/description/
 5. Container With Most Water -> https://leetcode.com/problems/container-with-most-water/description/
+6. Search in Rotated Sorted Array -> https://leetcode.com/problems/search-in-rotated-sorted-array/description/
