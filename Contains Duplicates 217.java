@@ -1,3 +1,8 @@
+/***
+ * https://leetcode.com/problems/contains-duplicate/description/
+ * Contains Duplicate
+ */
+
 class Solution {
     // Approach - 1 Using HashSet
     public boolean containsDuplicate(int[] nums) {
