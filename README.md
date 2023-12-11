@@ -9,3 +9,4 @@ Questions Solved
 6. Search in Rotated Sorted Array -> https://leetcode.com/problems/search-in-rotated-sorted-array/description/
 7. Find Minimum in Rotated Sorted Array -> https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/
 8. Missing Number -> https://leetcode.com/problems/missing-number/
+9. Number of Islands -> https://leetcode.com/problems/number-of-islands/description/
