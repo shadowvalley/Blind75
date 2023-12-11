@@ -11,3 +11,4 @@ Questions Solved
 8. Missing Number -> https://leetcode.com/problems/missing-number/
 9. Number of Islands -> https://leetcode.com/problems/number-of-islands/description/
 10. Number of Connected Components in an Undirected Graph -> https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/
+11. Merge Intervals -> https://leetcode.com/problems/merge-intervals/description/
