@@ -10,3 +10,4 @@ Questions Solved
 7. Find Minimum in Rotated Sorted Array -> https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/
 8. Missing Number -> https://leetcode.com/problems/missing-number/
 9. Number of Islands -> https://leetcode.com/problems/number-of-islands/description/
+10. Number of Connected Components in an Undirected Graph -> https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/
