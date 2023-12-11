@@ -42,38 +42,22 @@ class Solution {
 
 // Approach - 2
 class Solution {
+    // TC -> O(nlogn)
     public int[][] merge(int[][] intervals) {
+        // O(nlogn)
          Arrays.sort(intervals, Comparator.comparingInt(interval -> interval[0]));
 
-        List<List<Integer>> ans = new ArrayList<>();
-        for(int i=0;i<intervals.length;i++) {
+        LinkedList<int[]> ans = new LinkedList<>();
+        // O(n)
+        for(int[] interval: intervals) {
             // if the current interval does not
             // lie in the last interval:
-            if(ans.isEmpty() || intervals[i][0] > ans.get(ans.size() - 1).get(1)) {
-                ans.add(Arrays.asList(intervals[i][0], intervals[i][1]));
+            if(ans.isEmpty() || ans.getLast()[1] < interval[0]) {
+                ans.add(interval);
             } else {
-                ans.get(ans.size() - 1).set(1, Math.max(ans.get(ans.size() - 1).get(1), intervals[i][1]));
+                ans.getLast()[1] = Math.max(ans.getLast()[1], interval[1]);
             }
         }
-        return convertTo2DArray(ans);
+        return ans.toArray(new int[ans.size()][]);
     }
-}
-
-
-// Util 
-public static int[][] convertTo2DArray(List<List<Integer>> ans) {
-    int numRows = ans.size();
-    int[][] resultArray = new int[numRows][];
-
-    for (int i = 0; i < numRows; i++) {
-        List<Integer> rowList = ans.get(i);
-        int numCols = rowList.size();
-        resultArray[i] = new int[numCols];
-
-        for (int j = 0; j < numCols; j++) {
-            resultArray[i][j] = rowList.get(j);
-        }
-    }
-
-    return resultArray;
 }
