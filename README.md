@@ -30,3 +30,4 @@ Link List ->
 
 String ->
 1. Valid Anagram - https://leetcode.com/problems/valid-anagram/description/
+2. Valid Parentheses - https://leetcode.com/problems/valid-parentheses/description/
