@@ -28,6 +28,7 @@ Link List ->
 2. Linked List Cycle -> https://leetcode.com/problems/linked-list-cycle/description/
 3. Merge Two Sorted Lists -> https://leetcode.com/problems/merge-two-sorted-lists/description/
 4. Reorder List -> https://leetcode.com/problems/reorder-list/description/
+5. Remove Nth Node From End of List -> https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
 
 String ->
 1. Valid Anagram -> https://leetcode.com/problems/valid-anagram/description/
