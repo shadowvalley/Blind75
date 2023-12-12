@@ -22,6 +22,7 @@ Graph ->
 Intervals -> 
 1. Merge Intervals -> https://leetcode.com/problems/merge-intervals/description/
 2. Meeting Rooms II -> https://leetcode.com/problems/meeting-rooms-ii/description/
+3. Insert Interval -> https://leetcode.com/problems/insert-interval/description/
 
 Link List -> 
 1. Reverse Linked List -> https://leetcode.com/problems/reverse-linked-list/
