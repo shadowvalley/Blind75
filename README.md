@@ -18,6 +18,7 @@ Binary ->
 Graph -> 
 1. Number of Islands -> https://leetcode.com/problems/number-of-islands/description/
 2. Number of Connected Components in an Undirected Graph -> https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/
+3. Graph Valid Tree -> https://leetcode.com/problems/graph-valid-tree/description/
 
 Intervals -> 
 1. Merge Intervals -> https://leetcode.com/problems/merge-intervals/description/
