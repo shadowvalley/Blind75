@@ -6,40 +6,48 @@
 class Solution {
     // TC -> O(R*C) where R is rows length and C is cols length;
     // SC -> O(R*C) where R is rows length and C is cols length;
-    public int numIslands(char[][] grid) {
-        int rc = grid.length;
-        int cc = grid[0].length;
-        int islandsCount = 0;
+    
+    int rowCount;
+    int colCount;
+    
+    // Directions array
+    int[] rdir = {-1, 0, 1, 0};
+    int[] cdir = {0, 1, 0, -1};
 
-        // TC -> O(R*C) where R is rows length and C is cols length;
-        for(int r=0;r<rc;r++) {
-            for(int c=0;c<cc;c++) {
+    private void dfs(int row, int col, char[][]grid) {
+        // Mark grid[row][col] as visited
+        grid[row][col] = '0';
+
+        // Traverse all the 4 directions
+        for(int i=0;i<4;i++) {
+            int nrow = row + rdir[i];
+            int ncol = col + cdir[i];
+
+            if(isValid(nrow, ncol) && grid[nrow][ncol] != '0') {
+                dfs(nrow, ncol, grid);
+            }
+        }
+    }
+    
+    public boolean isValid(int row, int col) {
+        return row>=0 && row<rowCount && col>=0 && col < colCount;
+    }
+
+    public int numIslands(char[][] grid) {
+        rowCount = grid.length;
+        colCount = grid[0].length;
+
+
+        int islandCount = 0;
+        for(int r=0;r<rowCount;r++) {
+            for(int c=0;c<colCount;c++) {
                 if(grid[r][c] == '1') {
-                    islandsCount += 1;
-                    dfs(r, c, grid); 
+                    islandCount ++;
+                    // mark the entire island
+                    dfs(r, c, grid);
                 }
             }
         }
-
-        return islandsCount;
-    }
-
-    // TC -> O(V * 2E)
-    private void dfs(int r, int c, char[][]grid) {
-        int rc = grid.length;
-        int cc = grid[0].length;
-
-        // Check for boundary
-        if(r <0 || r >= rc || c < 0 || c >= cc || grid[r][c] == '0') {
-            return;
-        }
-
-        grid[r][c] = '0';
-
-        // Traverse in all 4 directions
-        dfs(r+1, c, grid);
-        dfs(r-1, c, grid);
-        dfs(r, c+1, grid);
-        dfs(r, c-1, grid);
+        return islandCount;
     }
 }
